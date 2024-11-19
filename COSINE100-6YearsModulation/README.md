@@ -61,3 +61,11 @@
   - `cosine_<calibration>_<coincidence>_amplitude`: the modulation amplitude obtained from the COSINE-100 full dataset `<coincidence>` data, with `<calibration>` calibration policy.
     - Example: `cosine_nrc_single_amplitude`: the modulation amplitude obtained from the COSINE-100 full dataset single-hit data, with `nrc` calibration policy, in "counts/day/kg/3.3 $\mathrm{keV_{nr}}$" unit.
     - `cosine_<calibration>_<coincidence>_amplitude_upper/lower_error`: corresponding 1$\sigma$ errors.
+- `SelectionEfficiency.csv`: event selection efficiency as a function of energy.
+  - `energy_kevee_#`: the energy for crystal`#` in $\mathrm{keV_{ee}}$ unit.
+  - `efficiency_#`: the event selection efficiency for crystal`#`.
+    - `efficiency_upper/lower_bound_#`: corresponding 1$\sigma$ credible interval.
+- `CosineNaQF.csv`: the quenching factor for the Na-quenching, measured by the COSINE collaboration.
+  - `nuclear_recoil_energy`: the original nuclear recoil energy in $\mathrm{keV_{nr}}$ unit.
+  - `qf`: the quenching factor.
+    - `qf_err`: corresponding 1$\sigma$ error.
