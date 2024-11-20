@@ -4,7 +4,10 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2409.13226-CC1400.svg)](https://arxiv.org/abs/2409.13226)
 
 - The data used in the ["COSINE-100 Full Dataset Challenges the Annual Modulation Signal of DAMA/LIBRA"](https://arxiv.org/abs/2409.13226) paper are available in this folder.
-- If you use data in this folder, please cite [arXiv:2409.13226](https://arxiv.org/abs/2409.13226).
+  - If you use data in this folder, please cite [arXiv:2409.13226](https://arxiv.org/abs/2409.13226).
+- The data is in `data` folder. See [Data Description](#data-description) section for details.
+- The notebooks in `visualizer` folder will help you to read the data and reproduce the plots in the paper. See [Visualizers](#visualizers) section for details, especially for the environment.
+- `figure` folder contains the plots drawn by the notebooks in `visualizer` folder, in `.pdf` format. Take a look at!
 
 ## Notation
 
