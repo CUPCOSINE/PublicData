@@ -14,6 +14,10 @@
   - Center for Underground Physics: [centers.ibs.re.kr/html/cup](https://centers.ibs.re.kr/html/cup/)
   - InspireHep: [inspirehep.net/experiments/1641535](https://inspirehep.net/experiments/1641535)
 
+## Items
+
+- [COSINE100-6YearsModulation](COSINE100-6YearsModulation/README.md): the result data and visualizers for "COSINE-100 Full Dataset Challenges the Annual Modulation Signal of DAMA/LIBRA" ([arXiv:2409.13226](https://arxiv.org/abs/2409.13226)).
+
 ## Contact
 
 - Hyunsu Lee: <hyunsulee@ibs.re.kr>
