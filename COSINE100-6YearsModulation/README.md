@@ -8,16 +8,19 @@
 
 ## Notation
 
-- `erc` and `nrc` in the file names indicate the calibration policy adopted.
+- `erc`, `nrc`, and `irc` in the file names indicate the calibration policy adopted.
   - `erc` stands for `electron-recoil-compatible` with the DAMA experiment. It adopted the linear calibration pivoted at 60 keV gamma-ray. It is identical to $\mathrm{keV_{ee}}$ in the paper.
-  - `nrc` stands for `nuclear-recoil-compatible` with the DAMA experiment. It calibrates considering the different quenching factors (for Na-recoil) of two experiments, DAMA and COSINE-100. Dividing them by 0.3 gives the energy in $\mathrm{keV_{nr}}$ in the paper.
+  - `nrc` stands for `(sodium)-nuclear-recoil-compatible` with the DAMA experiment. It calibrates considering the different quenching factors (for Na-recoil) of two experiments, DAMA and COSINE-100. Dividing them by 0.3 gives the energy in $\mathrm{keV_{nr}}$ in the paper.
+  - `irc` stands for `iodine-(nuclear)-recoil-compatible` with the DAMA experiment. It calibrates considering the different quenching factors (for I-recoil) of two experiments, DAMA and COSINE-100. Dividing them by 0.09 gives the energy in $\mathrm{keV_{nr,~I}}$ in the paper.
   - Examples
     - `erc1-3` indicates 1-3 $\mathrm{keV_{ee}}$ (linearly-calibrated energy unit).
     - `erc2-6` indicates 2-6 $\mathrm{keV_{ee}}$ (linearly-calibrated energy unit).
     - `nrc2-6` indicates 6.7-20 $\mathrm{keV_{nr}}$ ($2 \div 0.3$ gives 6.7, $6 \div 0.3$ gives 20). It corresponds to 2-6 keV in the DAMA detectors.
+    - `irc2-6` indicates 22.2-66.7 $\mathrm{keV_{nr,~I}}$ ($2 \div 0.09$ gives 22.2). It corresponds to 2-6 keV in the DAMA detectors.
 - Event rate unit
   - For `erc` calibration, the event rates and modulation amplitudes are represented in the unit of "counts/day/kg/$\mathrm{keV_{ee}}$". It corresponds to so-called DRU, daily-rate-unit.
-  - For `nrc` calibration, the event rates and modulation amplitudes are represented in the unit of "counts/day/kg/3.3 $\mathrm{keV_{nr}}$". The weird constant 3.3 makes the resulting numbers to be identical to the numbers in DRU.
+  - For `nrc` calibration, the event rates and modulation amplitudes are represented in the unit of "counts/day/kg/units of (3.3 $\mathrm{keV_{nr}}$)". The weird constant 3.3 makes the resulting numbers to be identical to the numbers in DRU.
+  - For `irc` calibration, the event rates and modulation amplitudes are represented in the unit of "counts/day/kg/units of (11 $\mathrm{keV_{nr,~I}}$)". The weird constant 11 makes the resulting numbers to be identical to the numbers in DRU.
 
 ## Visualizers
 
@@ -41,10 +44,10 @@
   - `counts_crystal#`: the number of events collected in the time bin.
     - Note that not only the `livetime_efficiency` but also the event selection efficiency must be considered to convert `counts` into `event_rate`.
 - `AmplitudePosterior_<roi>.csv`: the phase-fixed annual modulation amplitude posterior distribution obtained through the MCMC technique.
-  - `amplitude`: the modulation amplitude in "counts/day/kg/$\mathrm{keV_{ee}}$" (for `erc` calibration) or "counts/day/kg/3.3 $\mathrm{keV_{nr}}$" (for `nrc` calibration) unit.
+  - `amplitude`: the modulation amplitude in "counts/day/kg/$\mathrm{keV_{ee}}$" (for `erc` calibration), "counts/day/kg/3.3 $\mathrm{keV_{nr}}$" (for `nrc` calibration), or "counts/day/kg/11 $\mathrm{keV_{nr,~I}}$" (for `irc` calibration) unit.
   - `mcmc_samples`: the number of MCMC samples sampled from the COSINE-100 full dataset.
 - `PseudoUnderDama_<roi>.csv`: the expected distribution of the best-fits under the assumption of the DAMA's claim to be true.
-  - `amplitude_median`: the best-fit obtained from the pseudo-experiments in "counts/day/kg/$\mathrm{keV_{ee}}$" (for `erc` calibration) or "counts/day/kg/3.3 $\mathrm{keV_{nr}}$" (for `nrc` calibration) unit.
+  - `amplitude_median`: the best-fit obtained from the pseudo-experiments in "counts/day/kg/$\mathrm{keV_{ee}}$" (for `erc` calibration), "counts/day/kg/3.3 $\mathrm{keV_{nr}}$" (for `nrc` calibration), or "counts/day/kg/11 $\mathrm{keV_{nr,~I}}$" (for `irc` calibration) unit.
   - `pseudo_experiments`: the number of pseudo-experiments yielded the `amplitude_median`.
 - `TwoDimensionalPosterior_<roi>_histogram.csv`: the phase-floated annual modulation amplitude and phase posterior distribution obtained through the MCMC technique.
   - `amplitude`: the modulation amplitude in "counts/day/kg/$\mathrm{keV_{ee}}$" (for `erc` calibration) or "counts/day/kg/3.3 $\mathrm{keV_{nr}}$" (for `nrc` calibration) unit.
@@ -67,5 +70,9 @@
     - `efficiency_upper/lower_bound_#`: corresponding 1$\sigma$ credible interval.
 - `CosineNaQF.csv`: the quenching factor for the Na-quenching, measured by the COSINE collaboration.
   - `nuclear_recoil_energy`: the original nuclear recoil energy in $\mathrm{keV_{nr}}$ unit.
-  - `qf`: the quenching factor.
-    - `qf_err`: corresponding 1$\sigma$ error.
+  - `qf`: the quenching factor in %.
+    - `qf_err`: corresponding 1$\sigma$ error in %.
+- `CosineIQF.csv`: the quenching factor for the I-quenching, measured by the COSINE collaboration.
+  - `nuclear_recoil_energy`: the original nuclear recoil energy in $\mathrm{keV_{nr,~I}}$ unit.
+  - `qf`: the quenching factor in %.
+    - `qf_err`: corresponding 1$\sigma$ error in %.
