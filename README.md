@@ -17,7 +17,7 @@
 
 ## Items
 
-- [COSINE100-6YearsModulation](COSINE100-6YearsModulation/README.md): the result data and visualizers for "COSINE-100 Full Dataset Challenges the Annual Modulation Signal of DAMA/LIBRA" ([Science Advances 11, eadv6503 (20250](https://www.science.org/doi/epdf/10.1126/sciadv.adv6503), [arXiv:2409.13226](https://arxiv.org/abs/2409.13226)).
+- [COSINE100-6YearsModulation](COSINE100-6YearsModulation/README.md): the result data and visualizers for "COSINE-100 Full Dataset Challenges the Annual Modulation Signal of DAMA/LIBRA" ([Science Advances 11, eadv6503 (2025)](https://www.science.org/doi/epdf/10.1126/sciadv.adv6503), [arXiv:2409.13226](https://arxiv.org/abs/2409.13226)).
 
 ## Contact
 
