@@ -16,8 +16,8 @@
   - InspireHep: [inspirehep.net/experiments/1641535](https://inspirehep.net/experiments/1641535)
 
 ## Items
-
-- [COSINE100-6YearsModulation](COSINE100-6YearsModulation/README.md): the result data and visualizers for "COSINE-100 Full Dataset Challenges the Annual Modulation Signal of DAMA/LIBRA" ([Science Advances 11, eadv6503 (2025)](https://www.science.org/doi/epdf/10.1126/sciadv.adv6503), [arXiv:2409.13226](https://arxiv.org/abs/2409.13226)).
+- [COSINE100-1.7YearsWIMP](https://www.origins-cluster.de/odsl/dark-matter-data-center/available-datasets/cosine): the result data and visualizers for "Strong constraints from COSINE-100 on the DAMA dark matter results using the same sodium iodide target" published in "The Dark Matter Data Center" ([Science Advances 11, eabk2699 (2025)](https://www.science.org/doi/10.1126/sciadv.abk2699), [arXiv:2104.03537](https://arxiv.org/abs/2104.03537)).
+- [COSINE100-6YearsModulation](COSINE100-6YearsModulation/README.md): the result data and visualizers for "COSINE-100 Full Dataset Challenges the Annual Modulation Signal of DAMA/LIBRA" ([Science Advances 11, eadv6503 (2025)](https://www.science.org/doi/10.1126/sciadv.adv6503), [arXiv:2409.13226](https://arxiv.org/abs/2409.13226)).
 
 ## Contact
 
